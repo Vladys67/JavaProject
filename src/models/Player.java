@@ -30,6 +30,18 @@ public class Player {
         System.out.println("Player " + name + " armed with a  " + weapon + " and with health " + health +  " dies defeated ");
     }
 
+    private void respawn(){
+        System.out.println("Enemy " + name+ " has respawned again ");
+    }
+
+    void train(){
+        System.out.println(name + "is training with " + weapon + " to attacking the enemy ");
+    }
+
+    protected void rest(){
+        System.out.println( name + " is resting to regain health ");
+    }
+
     public String getName(){
         return name;
     }
